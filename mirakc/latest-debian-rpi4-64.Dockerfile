@@ -34,7 +34,7 @@ LABEL maintainer "collelog <collelog.cavamin@gmail.com>"
 ENV DEBIAN_FRONTEND=noninteractive
 ENV MIRAKC_CONFIG=/etc/mirakc/config.yml
 
-COPY ./services.sh /usr/local/bin/services.sh
+COPY ./mirakc/services.sh /usr/local/bin/services.sh
 
 # mirakc-arib, mirakc
 COPY --from=mirakc-image /build /
